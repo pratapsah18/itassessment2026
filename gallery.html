@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Gallery – Explore Nepal</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+    .gallery-item {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+      transition: transform 0.3s, box-shadow 0.3s;
+      background: #fff;
+    }
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+    .gallery-item a {
+      display: block;
+    }
+    .gallery-item a img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      transition: opacity 0.3s;
+    }
+    .gallery-item a img:hover {
+      opacity: 0.88;
+    }
+    .gallery-caption {
+      padding: 12px 15px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--green-dark);
+      font-family: 'Playfair Display', serif;
+      background: #fff;
+    }
+    .gallery-intro {
+      background: var(--cream);
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 35px;
+      border-left: 5px solid var(--gold);
+      color: var(--text-mid);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">&#127758; Explore<span>Nepal</span></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="culture.html">Culture</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="travel-tips.html">Travel Tips</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="sitemap.html">Site Map</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <h1>&#128247; Photo Gallery</h1>
+    <p>A visual journey through the breathtaking landscapes, rich culture, and wild nature of Nepal.</p>
+  </div>
+
+  <section style="padding: 60px 0; background: #fff;">
+    <div class="wrapper">
+
+      <div class="gallery-intro">
+        &#128247; <strong>Click on any thumbnail below to view the full-size image.</strong> Each photo captures a different side of beautiful Nepal — from the towering Himalayas to the vibrant streets of Kathmandu.
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item">
+          <a href="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=90" target="_blank">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=70" alt="Mount Everest seen from above the clouds, Nepal" />
+          </a>
+          <div class="gallery-caption">&#127956; Mount Everest – The Roof of the World</div>
+        </div>
+
+        <div class="gallery-item">
+          <a href="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1600&q=90" target="_blank">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/62/71/2c/the-heart-soul-of-pokhara.jpg?w=900&h=500&s=1" alt="Phewa Lake Pokhara with Annapurna mountains reflected in water" />
+          </a>
+          <div class="gallery-caption">&#127754; Phewa Lake, Pokhara</div>
+        </div>
+
+        <div class="gallery-item">
+          <a href="https://images.unsplash.com/photo-1570789210967-2cac24afeb00?w=1600&q=90" target="_blank">
+            <img src="https://cms.holidaystonepal.in/media/Blogs/Pashupatinath-Temple-Photos/Pashupatinath-Temple.png" alt="Pashupatinath Temple in Kathmandu Nepal" />
+          </a>
+          <div class="gallery-caption">&#9963;&#65039; Pashupatinath Temple, Kathmandu</div>
+        </div>
+
+        <div class="gallery-item">
+          <a href="https://images.unsplash.com/photo-1592669241067-a270d3900764?w=1600&q=90" target="_blank">
+            <img src="https://cdn.backpacker.com/wp-content/uploads/2018/12/bp0119nepal_wiebkenedel_kanchenjungavalleysection1_gn.jpg" alt="Trekker walking on trail in Nepal Himalayas" />
+          </a>
+          <div class="gallery-caption">&#127939; Trekking the Himalayan Trail</div>
+        </div>
+
+        <div class="gallery-item">
+          <a href="https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=1600&q=90" target="_blank">
+            <img src="https://d1jyxxz9imt9yb.cloudfront.net/medialib/5483/image/s768x1300/XKP144_reduced.jpg" alt="One-horned rhinoceros in Chitwan National Park Nepal" />
+          </a>
+          <div class="gallery-caption">&#129415; One-Horned Rhino, Chitwan</div>
+        </div>
+
+        <div class="gallery-item">
+          <a href="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=90" target="_blank">
+            <img src="https://www.nepalholiday.com/wp-content/uploads/2025/08/Rice-Terrace-Trip-in-Nepal-1.webp" alt="Green rice terraces in Nepal countryside" />
+          </a>
+          <div class="gallery-caption">&#127807; Rice Terraces of Rural Nepal</div>
+        </div>
+
+        <div class="gallery-item">
+          <a href="https://images.unsplash.com/photo-1539650116574-8efeb43e2750?w=1600&q=90" target="_blank">
+            <img src="https://images.squarespace-cdn.com/content/v1/5b735348266c075124b0ffb3/1568357399097-IWVSX871Q1NM412KR0RP/Boudha_Stupa_181030-9.jpg?format=1000w" alt="Boudhanath Stupa in Kathmandu Nepal at sunset" />
+          </a>
+          <div class="gallery-caption">&#9784;&#65039; Boudhanath Stupa, Kathmandu</div>
+        </div>
+
+        <div class="gallery-item">
+          <a href="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=1600&q=90" target="_blank">
+            <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=400&q=70" alt="Annapurna mountain range at golden sunrise Nepal" />
+          </a>
+          <div class="gallery-caption">&#127748; Annapurna Range at Sunrise</div>
+        </div>
+
+        <div class="gallery-item">
+          <a href="https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&q=90" target="_blank">
+            <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&q=70" alt="Prayer flags blowing in wind over Himalayan mountains" />
+          </a>
+          <div class="gallery-caption">&#127467;&#127470; Prayer Flags Over the Himalayas</div>
+        </div>
+
+        <div class="gallery-item">
+          <a href="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=1600&q=90" target="_blank">
+            <img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=400&q=70" alt="Beautiful Nepal mountain valley with forest and snow peaks" />
+          </a>
+          <div class="gallery-caption">&#127956; Himalayan Valley – Pure Wilderness</div>
+        </div>
+
+      </div>
+
+     
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>&#127758; ExploreNepal</h4>
+        <p>Your ultimate guide to discovering the magic of Nepal.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <address>
+          Thamel, Kathmandu<br />
+          Bagmati Province, Nepal<br />
+          Email: <a href="mailto:info@explorenepal.com">info@explorenepal.com</a>
+        </address>
+      </div>
+      <div class="footer-col">
+        <h4>Explore More</h4>
+        <ul>
+          <li><a href="culture.html">Culture &amp; Festivals</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="travel-tips.html">Travel Tips</a></li>
+          <li><a href="sitemap.html">Site Map</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <a href="index.html">Home</a> |
+      <a href="destinations.html">Destinations</a> |
+      <a href="culture.html">Culture</a> |
+      <a href="activities.html">Activities</a> |
+      <a href="travel-tips.html">Travel Tips</a> |
+      <a href="gallery.html">Gallery</a> |
+      <a href="sitemap.html">Site Map</a> |
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ExploreNepal &mdash; Thamel, Kathmandu, Nepal &mdash; All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
